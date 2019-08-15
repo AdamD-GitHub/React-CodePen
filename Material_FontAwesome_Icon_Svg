@@ -1,0 +1,23 @@
+/* 
+First hand uses JSON like style
+*/
+const {Typography, Icon, SvgIcon} = MaterialUI;
+// Place after this -----
+
+let green = {color:'green'};
+
+const element= <>
+<Icon color={'primary'}
+style={{fontSize:'128px'}}>star</Icon>
+<Icon color={'seconary'} className='materialicons md-48'>arrow_back</Icon>
+<SvgIcon>
+<path d="M20 12l-1.41-1.41L13 16.17V4h2v12.17l-5.58-5.59L4 12l8 8 8-8z" />
+</SvgIcon>
+<i style={green} className='far fa-hand-point-left fa-5x' />
+<i style={{color:'green', fontSize:'200px'}} className='far fa-hand-point-left fa-5x' />
+
+</>;
+
+// Place before this -----
+ReactDOM.render(element, document.querySelector("#root"));
+
